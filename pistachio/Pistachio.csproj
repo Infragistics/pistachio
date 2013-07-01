@@ -1,0 +1,105 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <DefaultClrNameSpace>Pistachio</DefaultClrNameSpace>
+    <AssemblyName>Pistachio</AssemblyName>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <AlwaysCompileMarkupFilesInSeparateDomain>false</AlwaysCompileMarkupFilesInSeparateDomain>
+    <ExpressionBlendCreationVersion>2.0.1075.0</ExpressionBlendCreationVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pistachio</RootNamespace>
+    <ApplicationIcon>Pistachio.ico</ApplicationIcon>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ProjectGuid>{12468D5A-42A2-4491-80B6-2F02EE76A5B3}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FULL</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
+  <ItemGroup>
+    <Reference Include="Infragistics.ToyBox, Version=1.0.2808.16623, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>LocalReferences\Infragistics.ToyBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics3.Windows.Chart.v7.2, Version=1.0.1.0, Culture=neutral, PublicKeyToken=f2a5e3adccfe69fd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NetAdvantage\DEV\2007.2\WPF\Build\Infragistics3.Windows.Chart.v7.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Windows.DataPresenter.v7.2, Version=7.2.20072.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NetAdvantage\DEV\2007.2\WPF\Build\Infragistics3.Windows.DataPresenter.v7.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Windows.Editors.v7.2, Version=7.2.20072.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NetAdvantage\DEV\2007.2\WPF\Build\Infragistics3.Windows.Editors.v7.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Windows.v7.2, Version=7.2.20072.1, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NetAdvantage\DEV\2007.2\WPF\Build\Infragistics3.Windows.v7.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <ApplicationDefinition Include="App.xaml" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Converters\HeightToItemsPerPageConverter.cs" />
+    <Compile Include="Converters\StringToShortenedNameConverter.cs" />
+    <Compile Include="Converters\StringToShortenedPathConverter.cs" />
+    <Compile Include="PistachioKey.cs" />
+    <Compile Include="PistachioKeyManager.cs" />
+    <Compile Include="PistachioPage.cs" />
+    <Compile Include="PistachioReferenceItem.cs" />
+    <Compile Include="ProgressEventArgs.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\XamlNodeToBrushConverter.cs" />
+    <Compile Include="XamlReader2.cs" />
+    <Compile Include="XmlTokenizer.cs" />
+    <Page Include="Window1.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Component Include="LocalReferences\Infragistics.ToyBox.dll" />
+    <Component Include="LocalReferences\Infragistics3.Windows.Chart.v7.2.dll" />
+    <Component Include="LocalReferences\Infragistics3.Windows.DataPresenter.v7.2.dll" />
+    <Component Include="LocalReferences\Infragistics3.Windows.Editors.v7.2.dll" />
+    <Component Include="LocalReferences\Infragistics3.Windows.v7.2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application.ico" />
+    <Resource Include="Images\PageIcon.png" />
+    <Resource Include="SourceArtwork\largeDocument.png" />
+    <Content Include="SourceArtwork\PageIcon.png" />
+    <Content Include="SourceArtwork\pistachiolayout.paths.png" />
+    <Content Include="SourceArtwork\pistachiolayout.png" />
+    <Resource Include="Resources\Images\pistachio_logo.png" />
+    <Resource Include="Pistachio.ico" />
+    <Resource Include="SourceArtwork\smalldocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infragistics.ToyBox", "Infragistics.ToyBox\Infragistics.ToyBox.csproj", "{7968BE1C-AAFD-4311-925F-BC074723062B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBoxTester", "ToyBoxTester\ToyBoxTester.csproj", "{06C0F770-7E3E-4673-A1FF-6A8FADDB69F8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Infragistics.ToyBox\\Infragistics.ToyBox.csproj
+		SccProjectName1 = Infragistics.ToyBox
+		SccLocalPath1 = Infragistics.ToyBox
+		SccProjectUniqueName2 = ToyBoxTester\\ToyBoxTester.csproj
+		SccProjectName2 = ToyBoxTester
+		SccLocalPath2 = ToyBoxTester
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7968BE1C-AAFD-4311-925F-BC074723062B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7968BE1C-AAFD-4311-925F-BC074723062B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7968BE1C-AAFD-4311-925F-BC074723062B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7968BE1C-AAFD-4311-925F-BC074723062B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C0F770-7E3E-4673-A1FF-6A8FADDB69F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C0F770-7E3E-4673-A1FF-6A8FADDB69F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C0F770-7E3E-4673-A1FF-6A8FADDB69F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C0F770-7E3E-4673-A1FF-6A8FADDB69F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
